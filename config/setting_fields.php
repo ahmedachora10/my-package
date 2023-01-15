@@ -124,6 +124,16 @@ return [
                 'class' => '',
                 'value' => ''
 
+            ],
+            [
+                'type' => 'file',
+                'data' => 'file',
+                'name' => 'icon',
+                'label' => 'Icon',
+                'rules' => 'nullable|image',
+                'class' => '',
+                'value' => ''
+
             ]
         ]
     ],

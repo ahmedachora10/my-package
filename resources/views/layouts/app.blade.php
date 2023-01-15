@@ -15,7 +15,9 @@
 
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" {{-- href="{{ asset('storage/images/logo/' . setting('ico')) ?? asset('assets/img/favicon/favicon.ico') }}" /> --}} <!-- Fonts -->
+    <link rel="icon" type="image/x-icon"
+        href="{{ asset(str_replace('public/', 'storage/', setting('icon'))) ?? asset('assets/img/favicon/favicon.ico') }}" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
