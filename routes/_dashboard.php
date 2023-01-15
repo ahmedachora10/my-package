@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,8 @@ Route::middleware(['auth', 'role:admin'])->group(function ()
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->middleware('verified')->name('dashboard');
+
+    Route::get('/users', [UserController::class, 'index'])->name('admin.users');
 });
 
 

@@ -18,7 +18,10 @@
 
         <x-dashboard.sidebar.link :title="trans('sidebar.dashboard')" icon="home-circle" :link="route('dashboard')" />
 
+        <x-dashboard.sidebar.link :title="trans('sidebar.users')" icon="user" :link="route('admin.users')" />
+
         <x-dashboard.sidebar.link :title="trans('sidebar.settings')" icon="cog" :link="route('settings.index')" />
+
 
         <!-- Misc -->
         <li class="menu-item">
