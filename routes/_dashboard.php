@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::middleware(['auth'])->group(function ()
+Route::middleware(['auth', 'role:admin'])->group(function ()
 {
     Route::controller(SettingController::class)
     ->prefix('settings')->name('settings.')
@@ -14,13 +14,14 @@ Route::middleware(['auth'])->group(function ()
         Route::get('/', 'index')->name('index');
         Route::post('/', 'store')->name('store');
     });
+
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->middleware('verified')->name('dashboard');
 });
 
 
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
