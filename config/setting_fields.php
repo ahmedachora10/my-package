@@ -28,79 +28,99 @@ return [
         ]
     ],
 
-    'media' => [
+    // 'media' => [
 
-        'title' => 'Socail Media',
+    //     'title' => 'Socail Media',
+    //     'desc' => '',
+    //     'icon' => 'menu-icon tf-icons bx bx-user-pin',
+
+    //     'elements' => [
+    //         [
+    //             'type' => 'text',
+    //             'data' => 'string',
+    //             'name' => 'facebook',
+    //             'label' => 'Facebook',
+    //             'rules' => 'nullable|string',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ],
+    //         [
+    //             'type' => 'text',
+    //             'data' => 'string',
+    //             'name' => 'twitter',
+    //             'label' => 'Twitter',
+    //             'rules' => 'nullable|string',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ],
+    //         [
+    //             'type' => 'text',
+    //             'data' => 'string',
+    //             'name' => 'instagram',
+    //             'label' => 'Instagram',
+    //             'rules' => 'nullable|string',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ],
+    //         [
+    //             'type' => 'text',
+    //             'data' => 'string',
+    //             'name' => 'whatsapp',
+    //             'label' => 'Whatsapp',
+    //             'rules' => 'nullable|string',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ],
+    //     ]
+    // ],
+
+    // 'contact' => [
+
+    //     'title' => 'Contact Account',
+    //     'desc' => '',
+    //     'icon' => 'menu-icon tf-icons bx bx-user-pin',
+
+    //     'elements' => [
+    //         [
+    //             'type' => 'email',
+    //             'data' => 'string',
+    //             'name' => 'email',
+    //             'label' => 'Email',
+    //             'rules' => 'nullable|email',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ],
+    //         [
+    //             'type' => 'text',
+    //             'data' => 'string',
+    //             'name' => 'phone',
+    //             'label' => 'Phone Number',
+    //             'rules' => 'nullable|integer',
+    //             'class' => '',
+    //             'value' => ''
+
+    //         ]
+    //     ]
+    // ],
+
+    'logo' => [
+
+        'title' => 'Logo',
         'desc' => '',
         'icon' => 'menu-icon tf-icons bx bx-user-pin',
 
         'elements' => [
             [
-                'type' => 'text',
-                'data' => 'string',
-                'name' => 'facebook',
-                'label' => 'Facebook',
-                'rules' => 'nullable|string',
-                'class' => '',
-                'value' => ''
-
-            ],
-            [
-                'type' => 'text',
-                'data' => 'string',
-                'name' => 'twitter',
-                'label' => 'Twitter',
-                'rules' => 'nullable|string',
-                'class' => '',
-                'value' => ''
-
-            ],
-            [
-                'type' => 'text',
-                'data' => 'string',
-                'name' => 'instagram',
-                'label' => 'Instagram',
-                'rules' => 'nullable|string',
-                'class' => '',
-                'value' => ''
-
-            ],
-            [
-                'type' => 'text',
-                'data' => 'string',
-                'name' => 'whatsapp',
-                'label' => 'Whatsapp',
-                'rules' => 'nullable|string',
-                'class' => '',
-                'value' => ''
-
-            ],
-        ]
-    ],
-
-    'contact' => [
-
-        'title' => 'Contact Account',
-        'desc' => '',
-        'icon' => 'menu-icon tf-icons bx bx-user-pin',
-
-        'elements' => [
-            [
-                'type' => 'email',
-                'data' => 'string',
-                'name' => 'email',
-                'label' => 'Email',
-                'rules' => 'nullable|email',
-                'class' => '',
-                'value' => ''
-
-            ],
-            [
-                'type' => 'text',
-                'data' => 'string',
-                'name' => 'phone',
-                'label' => 'Phone Number',
-                'rules' => 'nullable|integer',
+                'type' => 'file',
+                'data' => 'file',
+                'name' => 'logo',
+                'label' => 'Logo',
+                'rules' => 'nullable|image',
                 'class' => '',
                 'value' => ''
 

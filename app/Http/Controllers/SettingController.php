@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
 
 class SettingController extends Controller
 {
@@ -21,6 +22,10 @@ class SettingController extends Controller
 
         foreach ($data as $key => $val) {
             if (in_array($key, $validSettings)) {
+                if($val instanceof UploadedFile) {
+                    $fullPath = $val->storeAs('public/images/logo/', str()->random(20) . '.' . $val->getClientOriginalExtension());
+                    $val = $fullPath;
+                }
                 Setting::add($key, $val, Setting::getDataType($key));
             }
         }
