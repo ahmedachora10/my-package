@@ -54,6 +54,83 @@
     {{-- @vite('resources/css/app.css') --}}
 
 
+
+    @if (app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
+        <style>
+            .me-2 {
+                margin-left: .5rem !important;
+            }
+
+            .ms-2 {
+                margin-right: .5rem !important;
+            }
+
+            .pe-2 {
+                padding-left: .5rem !important;
+            }
+
+            .ms-2 {
+                padding-right: .5rem !important;
+            }
+
+            .me-3 {
+                margin-left: 1rem !important;
+            }
+
+            .ms-3 {
+                margin-right: 1rem !important;
+            }
+
+            .ps-3 {
+                padding-right: 1rem !important;
+            }
+
+            .pe-3 {
+                padding-left: 1rem !important;
+            }
+
+            .ms-auto {
+                margin-right: auto !important;
+                margin-left: 0 !important;
+            }
+
+            .me-auto {
+                margin-left: auto !important;
+                margin-right: 0 !important;
+            }
+
+            .flex-row {
+                flex-direction: row-reverse !important;
+            }
+
+            .flex-row-reverse {
+                flex-direction: row !important;
+            }
+
+            aside a.menu-link {
+                font-weight: bold !important;
+            }
+
+
+            @media (min-width: 1200px) {
+
+                .layout-menu-fixed .layout-menu,
+                .layout-menu-fixed-offcanvas .layout-menu {
+                    right: 0 !important;
+                    left: unset !important;
+                }
+
+                .layout-menu-fixed:not(.layout-menu-collapsed) .layout-page,
+                .layout-menu-fixed-offcanvas:not(.layout-menu-collapsed) .layout-page {
+                    padding-right: 16.25rem;
+                    padding-left: 0 !important;
+                }
+
+            }
+        </style>
+    @endif
+
     @stack('styles')
 
     @livewireStyles

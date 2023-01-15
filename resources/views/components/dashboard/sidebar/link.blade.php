@@ -3,7 +3,7 @@
         @if ($icon)
             <i class="menu-icon tf-icons bx bx-{{ $icon }}"></i>
         @endif
-        <div data-i18n="Tables">{{ __($title) }}</div>
+        <div data-i18n="Tables">{{ $title }}</div>
     </a>
 
     @if ($hasSubMenu)

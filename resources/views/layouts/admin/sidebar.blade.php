@@ -16,9 +16,9 @@
 
     <ul class="menu-inner py-1 ps ps--active-y">
 
-        <x-dashboard.sidebar.link title="Dashboard" icon="home-circle" :link="route('dashboard')" />
+        <x-dashboard.sidebar.link :title="trans('sidebar.dashboard')" icon="home-circle" :link="route('dashboard')" />
 
-        <x-dashboard.sidebar.link title="Settings" icon="cog" :link="route('settings.index')" />
+        <x-dashboard.sidebar.link :title="trans('sidebar.settings')" icon="cog" :link="route('settings.index')" />
 
         <!-- Misc -->
         <li class="menu-item">

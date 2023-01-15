@@ -15,13 +15,13 @@
                                 <i class="{{ $fields['icon'] }}"></i>
                             @endif
                             @if ($fields['title'])
-                                {{ $fields['title'] }}
+                                {{ trans('settings.' . strtolower($fields['title'])) }}
                             @endif
                         </div>
 
                         @if ($fields['desc'])
                             <div class="panel-body">
-                                <p class="text-muted">{{ $fields['desc'] }}</p>
+                                <p class="text-muted">{{ trans('settings.' . strtolower($fields['desc'])) }}</p>
                             </div>
                         @endif
 
@@ -44,7 +44,7 @@
         <div class="row m-b-md">
             <div class="col-md-12">
                 <button class="btn-primary btn">
-                    {{ __('Save Settings') }}
+                    {{ trans('settings.save') }}
                 </button>
             </div>
         </div>

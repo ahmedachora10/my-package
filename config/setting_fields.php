@@ -11,7 +11,7 @@ return [
                 'type' => 'text', // input fields type
                 'data' => 'string', // data type, string, int, boolean
                 'name' => 'app_name', // unique name for field
-                'label' => 'App Name', // you know what label it is
+                'label' => 'Name', // you know what label it is
                 'rules' => 'required|min:2|max:50', // validation rule of laravel
                 'class' => '', // any class for input
                 'value' => config('app.name') // default value if you want
@@ -20,7 +20,7 @@ return [
                 'type' => 'text', // input fields type
                 'data' => 'string', // data type, string, int, boolean
                 'name' => 'app_description', // unique name for field
-                'label' => 'App Description', // you know what label it is
+                'label' => 'Description', // you know what label it is
                 'rules' => 'nullable|min:2|max:50', // validation rule of laravel
                 'class' => '', // any class for input
                 'value' => '' // default value if you want
